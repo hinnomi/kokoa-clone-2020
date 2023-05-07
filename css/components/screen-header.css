@@ -1,0 +1,48 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+  
+}
+.screen-header__link {
+  position: relative;
+}
+
+.screen-header__notice {
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+  animation: noticeAnimation 3s infinite;
+}
+@keyframes noticeAnimation {
+  0%{transform: scale(1);}
+  30%{transform: scale(.9);}
+  40%{transform: scale(1.2);}
+  60%{transform: scale(.9);}
+  70%{transform: scale(1.2);}
+  80%{transform: scale(1);}
+}
