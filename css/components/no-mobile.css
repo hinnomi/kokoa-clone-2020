@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 99;
   height: 100vh;
-  background-image:url('imges/hipgo.jpeg');
+  background-image:url('imges/hipgo.jpg');
   width: 100vw;
   display: flex;
   justify-content: center;
